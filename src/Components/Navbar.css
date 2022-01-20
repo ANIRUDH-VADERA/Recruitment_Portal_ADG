@@ -1,0 +1,18 @@
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  background-color: transparent;
+  padding-bottom: 15px;
+  z-index: 100;
+  margin: 0;
+  padding: 3.5% 4%;
+}
+
+img {
+  width: 123px;
+  height: 46.18px;
+}
