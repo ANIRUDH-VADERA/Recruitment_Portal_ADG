@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap");
+
+@font-face {
+  font-family: GilroyExtraBold;
+  src: url("../font/Gilroy Font/Gilroy-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: GilroySemiBold;
+  src: url("../font/Gilroy Font/Gilroy-SemiBold.ttf");
+}
 .btn1 {
   -webkit-border-radius: 12;
   -moz-border-radius: 12;
@@ -44,26 +55,27 @@
   justify-content: center;
 }
 
-.left {
+.landing_page .left {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 45vw;
 }
 
-.right {
+.landing_page .right {
   height: 100vh;
   width: 55vw;
 }
 
-.right img {
+.landing_page .right img {
   height: 100vh;
+  object-fit: cover;
   width: 55vw;
 }
 
-.info {
+.landing_page .info {
   width: 35vw;
   display: flex;
   flex-direction: column;
@@ -71,7 +83,7 @@
 }
 
 h1 {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -85,7 +97,7 @@ h1 {
 }
 
 .heading1 {
-  font-family: Gilroy;
+  font-family: GilroySemiBold;
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -102,8 +114,6 @@ h1 {
 .portal_img {
   width: 11vw;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap");
 
 .para {
   font-family: "Montserrat", sans-serif;

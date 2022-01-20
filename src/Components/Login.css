@@ -13,23 +13,14 @@
   src: url("../font/Gilroy Font/Gilroy-Medium.ttf");
 }
 
-.signup_page {
+.login_page {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.signup_page .left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 55vw;
-}
-
-.signup_page .right {
+.login_page .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,15 +29,24 @@
   width: 45vw;
 }
 
-.signup_page .left img {
+.login_page .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 55vw;
+}
+
+.login_page .right img {
   height: 100vh;
   width: 55vw;
   object-fit: cover;
 }
 
-.signup_page .main_form {
+.login_page .main_form {
   width: 30vw;
-  height: 70%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,7 +56,7 @@
   border-radius: 25px;
 }
 
-.signup_page .btn1 {
+.login_page .btn1 {
   -webkit-border-radius: 12;
   -moz-border-radius: 12;
   border-radius: 12px;
@@ -71,12 +71,12 @@
   margin: 0;
 }
 
-.signup_page .btn1:hover {
+.login_page .btn1:hover {
   background: #4506c8;
   text-decoration: none;
 }
 
-.signup_page .heading {
+.login_page .heading {
   font-family: GilroySemiBold;
   font-style: normal;
   font-weight: 600;
@@ -88,10 +88,10 @@
 
   color: #ffffff;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
-.signup_page .para {
+.login_page .para {
   font-family: GilroyMedium;
   font-style: normal;
   font-weight: 500;
@@ -110,7 +110,7 @@
   margin: 5px;
 }
 
-.signup_page .bottom {
+.login_page .bottom {
   font-family: GilroySemiBold;
   font-style: normal;
   font-weight: 600;
@@ -128,15 +128,15 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.signup_page .tologin {
+.login_page .tosignup {
   margin-left: 3px;
   color: #864ff9;
   cursor: pointer;
 }
 
-.signup_page .form {
+.login_page .form {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -144,7 +144,7 @@
   align-items: flex-start;
 }
 
-.signup_page input {
+input {
   width: 100%;
   background: #2b2b2b;
   border-radius: 16px;
@@ -155,7 +155,7 @@
   border: none;
 }
 
-.signup_page label {
+label {
   font-family: GilroyMedium;
   font-style: normal;
   font-weight: 500;
@@ -173,23 +173,14 @@
 
 /* OTP PAGE */
 
-.otp_page {
+.otp_page_login {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.otp_page .left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 55vw;
-}
-
-.otp_page .right {
+.otp_page_login .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -198,13 +189,22 @@
   width: 45vw;
 }
 
-.otp_page .left img {
+.otp_page_login .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 55vw;
+}
+
+.otp_page_login .right img {
   height: 100vh;
   width: 55vw;
   object-fit: cover;
 }
 
-.otp_page .main_form {
+.otp_page_login .main_form {
   width: 30vw;
   height: 40%;
   display: flex;
@@ -216,7 +216,7 @@
   border-radius: 25px;
 }
 
-.otp_page .btn1 {
+.otp_page_login .btn1 {
   -webkit-border-radius: 12;
   -moz-border-radius: 12;
   border-radius: 12px;
@@ -231,12 +231,12 @@
   margin: 0;
 }
 
-.otp_page.btn1:hover {
+.otp_page_login.btn1:hover {
   background: #4506c8;
   text-decoration: none;
 }
 
-.otp_page .heading {
+.otp_page_login .heading {
   font-family: GilroySemiBold;
   font-style: normal;
   font-weight: 600;
@@ -250,10 +250,10 @@
   margin-top: 30px;
 }
 
-.otp_page .para {
+.otp_page_login .para {
   font-family: GilroyMedium;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   /* identical to box height, or 137% */
@@ -269,7 +269,7 @@
   margin: 5px;
 }
 
-.otp_page .bottom {
+.otp_page_login .bottom {
   font-family: GilroyMedium;
   font-style: normal;
   font-weight: normal;
@@ -286,7 +286,7 @@
   color: rgba(255, 255, 255, 0.4);
 }
 
-.otp_page .tosignup {
+.otp_page_login .tosignup {
   font-family: GilroyMedium;
   font-style: normal;
   font-weight: 600;
@@ -302,13 +302,13 @@
   cursor: pointer;
 }
 
-.otp_page .resendOTP {
+.otp_page_login .resendOTP {
   margin-left: 3px;
   color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
 }
 
-.otp_page .form {
+.otp_page_login .form {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -316,20 +316,4 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-.otp_page label {
-  font-family: GilroyMedium;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 22px;
-  /* identical to box height, or 147% */
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.25px;
-
-  color: #ffffff;
-  margin-bottom: 5px;
 }
