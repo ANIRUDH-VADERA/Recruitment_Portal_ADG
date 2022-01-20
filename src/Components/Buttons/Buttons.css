@@ -1,0 +1,12 @@
+.col{
+    background-color: #6B27F8;
+    border-radius: 12px;
+  
+  }
+  
+  .col-login{
+    background-color: #131313;
+    border: 3px solid #6B27F8;
+    border-radius: 12px;
+    color: #9362FA;
+  }
