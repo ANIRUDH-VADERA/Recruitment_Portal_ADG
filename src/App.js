@@ -1,16 +1,17 @@
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Components/Navbar.js"
-import LandingPage from "./Components/LandingPage.js"
-import SignUp from "./Components/SignUp.js";
-import Login from "./Components/Login.js";
-import Aboutyourself from "./Components/Aboutyourself.js"
+import Navbar from "./Components/Navbar";
+import LandingPage from "./Components/LandingPage";
+import SignUp from "./Components/SignUp";
+import Login from "./Components/Login";
+import Aboutyourself from "./Components/Aboutyourself";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
-        <Routes >
+        <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/Login" element={<Login />} />
