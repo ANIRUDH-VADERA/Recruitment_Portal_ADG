@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Gilroy;
+  src: url("../font/Gilroy Font/Gilroy-Bold.ttf");
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  background-color: transparent;
+  padding-bottom: 15px;
+  z-index: 100;
+  margin: 0;
+  padding: 3% 5%;
+}
+
+img {
+  width: 123px;
+  height: 46.18px;
+}
