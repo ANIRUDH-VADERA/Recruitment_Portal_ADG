@@ -1,0 +1,27 @@
+.input-col{
+    background-color: #2B2B2B;
+    border-radius: 16px;
+    }
+    .input-col:focus{
+        border: 2px solid rgba(255, 255, 255, 0.4)
+    }
+    
+    .form-bg{
+        background-color: #1F1F1F;
+    border-radius: 25px;
+    }
+    .col{
+        background-color: #6B27F8;
+        border-radius: 12px;
+    
+    }
+    .col:hover{
+        background-color: #4506C8;
+    }
+    .place-col{
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .login-col{
+        color: #864FF9
+    
+    }
