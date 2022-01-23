@@ -9,8 +9,8 @@
 }
 
 body {
-	height: 100%;
-	margin: 0;
+	height: auto;
+	margin: 0px;
 	background: #000;
 	background-image: url(./Assets/bg1.png); /* fallback */
 	background-image: url(./Assets/bg1.png),
@@ -21,6 +21,7 @@ body {
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
+	overflow-y: none;
 }
 
 .logo {
@@ -39,6 +40,7 @@ body {
 	color: white;
 	text-align: center;
 	letter-spacing: 0.75px;
+	overflow: hidden;
 }
 
 .explorer {
@@ -52,10 +54,11 @@ body {
 		1px 1px 0 #fff;
 	text-align: center;
 	letter-spacing: 0.75px;
+	padding-bottom:0px;
 }
 
 .rewards {
-	margin-top: 5rem;
+	/* margin-top: 5rem; */
 	position: static;
 	text-align: center;
 	font-family: GilroyMedium;
@@ -75,7 +78,7 @@ body {
 }
 
 .tuned {
-	margin-top: 5rem;
+	margin-top: 2rem;
 	position: static;
 	text-align: center;
 	font-family: GilroyMedium;
@@ -99,17 +102,20 @@ footer {
 	margin-bottom: 2rem;
 	padding-bottom: 5%;
 	font-size: 21px;
-	margin-top: 7%;
+	margin-top: 3%;
 	color: white;
 	font-family: GilroyMedium;
 }
 
 @media screen and (max-width: 750px) {
 	body {
-		padding: 3%;
+		padding: 2px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 0px;
 	}
 	.logo {
-		padding-top: 7rem;
+		padding-top: 2rem;
 	}
 	.congratulations {
 		font-size: 45px;
@@ -117,6 +123,8 @@ footer {
 
 	.explorer {
 		font-size: 54px;
+		margin-bottom: 0;
+
 	}
 
 	.timer {
@@ -127,13 +135,54 @@ footer {
 	.rewards,
 	.tuned,
 	.check {
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	footer {
-		margin-top: 30px;
+		margin-top: 15px;
 		font-size: 13.5px;
 		padding-left: 5px;
 		padding-right: 5px;
+	}
+}
+@media only screen and (max-width:370px){
+	body{
+		margin-left: 25px;
+		margin-right: 25px;
+		margin-bottom: 0px;
+	}
+	.logo{
+		height:auto;
+		width:100%;
+
+	}
+	.logo img{
+		width: 150px;
+	}
+    .congratulations{
+        font-size: 30px;
+		height: 50px;
+    }
+	.explorer{
+		font-size: 30px;
+		height: 70px;
+	}
+	.check{
+		margin-top: 10px;
+		margin-bottom:40px ;
+	}
+	.timer{
+		font-size: 22px;
+	}
+	.tuned{
+		font-size: 18px;
+	}
+	.rewards{
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	footer{
+		margin-bottom: 70px;
+		font-size: 15px;
 	}
 }
