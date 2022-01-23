@@ -8,6 +8,14 @@
 	src: url(./Assets/Gilroy-SemiBold.ttf);
 }
 
+html {
+	background: linear-gradient(
+			0deg,
+			rgba(19, 19, 19, 0.29),
+			rgba(19, 19, 19, 0.29)
+		),
+		linear-gradient(112.68deg, #180247 0%, #010004 100%);
+}
 body {
 	height: auto;
 	margin: 0px;
@@ -21,7 +29,6 @@ body {
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	overflow-y: none;
 }
 
 .logo {
@@ -33,7 +40,7 @@ body {
 .congratulations {
 	position: static;
 	width: auto;
-	height: 86px;
+	/* height: 86px; */
 	font-size: 86px;
 	font-family: GilroySemiBold;
 	font-weight: bolder;
@@ -46,7 +53,7 @@ body {
 .explorer {
 	position: static;
 	width: auto;
-	height: 107px;
+	/* height: 107px; */
 	font-size: 92px;
 	font-family: GilroySemiBold;
 	font-weight: 600;
@@ -54,7 +61,7 @@ body {
 		1px 1px 0 #fff;
 	text-align: center;
 	letter-spacing: 0.75px;
-	padding-bottom:0px;
+	padding-bottom: 3%;
 }
 
 .rewards {
@@ -124,7 +131,6 @@ footer {
 	.explorer {
 		font-size: 54px;
 		margin-bottom: 0;
-
 	}
 
 	.timer {
@@ -145,43 +151,42 @@ footer {
 		padding-right: 5px;
 	}
 }
-@media only screen and (max-width:370px){
-	body{
+@media only screen and (max-width: 370px) {
+	body {
 		margin-left: 25px;
 		margin-right: 25px;
 		margin-bottom: 0px;
 	}
-	.logo{
-		height:auto;
-		width:100%;
-
+	.logo {
+		height: auto;
+		width: 100%;
 	}
-	.logo img{
+	.logo img {
 		width: 150px;
 	}
-    .congratulations{
-        font-size: 30px;
+	.congratulations {
+		font-size: 30px;
 		height: 50px;
-    }
-	.explorer{
+	}
+	.explorer {
 		font-size: 30px;
 		height: 70px;
 	}
-	.check{
+	.check {
 		margin-top: 10px;
-		margin-bottom:40px ;
+		margin-bottom: 40px;
 	}
-	.timer{
+	.timer {
 		font-size: 22px;
 	}
-	.tuned{
+	.tuned {
 		font-size: 18px;
 	}
-	.rewards{
+	.rewards {
 		font-size: 20px;
 		margin-bottom: 30px;
 	}
-	footer{
+	footer {
 		margin-bottom: 70px;
 		font-size: 15px;
 	}
