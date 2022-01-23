@@ -15,9 +15,10 @@ html {
 			rgba(19, 19, 19, 0.29)
 		),
 		linear-gradient(112.68deg, #180247 0%, #010004 100%);
+	overflow: hidden;
 }
 body {
-	height: auto;
+	height: 100vh;
 	margin: 0px;
 	background: #000;
 	background-image: url(./Assets/bg1.png); /* fallback */
@@ -26,35 +27,48 @@ body {
 		linear-gradient(112.68deg, #180247 0%, #010004 100%);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	display: flex;
 	flex-direction: column;
 }
 
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100vh;
+	padding: 3%;
+}
 .logo {
-	padding-top: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* padding-top: 5%; */
+	padding-bottom: 3%;
+}
+.logo a {
 	text-align: center;
-	padding-bottom: 3rem;
+}
+.logo a img {
+	width: 80%;
+	height: auto;
 }
 
 .congratulations {
 	position: static;
-	width: auto;
+	width: 100%;
 	/* height: 86px; */
-	font-size: 86px;
+	font-size: 75px;
 	font-family: GilroySemiBold;
-	font-weight: bolder;
 	color: white;
 	text-align: center;
 	letter-spacing: 0.75px;
-	overflow: hidden;
 }
 
 .explorer {
 	position: static;
-	width: auto;
-	/* height: 107px; */
-	font-size: 92px;
+	width: 100%;
+	font-size: 75px;
 	font-family: GilroySemiBold;
 	font-weight: 600;
 	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
@@ -65,7 +79,6 @@ body {
 }
 
 .rewards {
-	/* margin-top: 5rem; */
 	position: static;
 	text-align: center;
 	font-family: GilroyMedium;
@@ -80,12 +93,13 @@ body {
 	font-family: GilroySemiBold;
 	font-weight: bold;
 	color: white;
-	font-size: 36px;
+	font-size: 44px;
 	letter-spacing: 4px;
 }
 
 .tuned {
-	margin-top: 2rem;
+	/* margin-top: 2rem; */
+	padding-top: 3%;
 	position: static;
 	text-align: center;
 	font-family: GilroyMedium;
@@ -108,86 +122,38 @@ footer {
 	text-align: center;
 	margin-bottom: 2rem;
 	padding-bottom: 5%;
-	font-size: 21px;
+	font-size: 16px;
 	margin-top: 3%;
 	color: white;
 	font-family: GilroyMedium;
 }
 
-@media screen and (max-width: 750px) {
-	body {
-		padding: 2px;
-		margin-left: 10px;
-		margin-right: 10px;
-		margin-bottom: 0px;
+@media screen and (max-width: 768px) {
+	.main {
+		/* padding-top: 5%; */
 	}
-	.logo {
-		padding-top: 2rem;
-	}
-	.congratulations {
-		font-size: 45px;
-	}
-
-	.explorer {
-		font-size: 54px;
-		margin-bottom: 0;
-	}
-
-	.timer {
-		padding-left: 15px;
-		padding-right: 15px;
-		font-size: 25px;
-	}
-	.rewards,
-	.tuned,
-	.check {
-		font-size: 20px;
-	}
-
-	footer {
-		margin-top: 15px;
-		font-size: 13.5px;
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-}
-@media only screen and (max-width: 370px) {
-	body {
-		margin-left: 25px;
-		margin-right: 25px;
-		margin-bottom: 0px;
-	}
-	.logo {
+	.logo a img {
+		width: 60%;
 		height: auto;
-		width: 100%;
 	}
-	.logo img {
-		width: 150px;
-	}
-	.congratulations {
-		font-size: 30px;
-		height: 50px;
-	}
+	.congratulations,
 	.explorer {
-		font-size: 30px;
-		height: 70px;
-	}
-	.check {
-		margin-top: 10px;
-		margin-bottom: 40px;
-	}
-	.timer {
-		font-size: 22px;
-	}
-	.tuned {
-		font-size: 18px;
+		font-size: 42px;
 	}
 	.rewards {
-		font-size: 20px;
-		margin-bottom: 30px;
+		font-size: 18px;
 	}
+
+	.timer {
+		font-size: 26px;
+	}
+
+	.tuned,
+	.check {
+		font-size: 18px;
+	}
+
 	footer {
-		margin-bottom: 70px;
-		font-size: 15px;
+		font-size: 12px;
 	}
 }
