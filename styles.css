@@ -1,126 +1,139 @@
 @font-face {
-  font-family: Gilroy;
-  src: url(./Assets/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf);
+	font-family: GilroyMedium;
+	src: url(./Assets/Gilroy-Medium.ttf);
+}
+
+@font-face {
+	font-family: GilroySemiBold;
+	src: url(./Assets/Gilroy-SemiBold.ttf);
 }
 
 body {
-  height: 100vh;
-  margin: 0;
-  background: #000;
-  background-image: url(./Assets/bg.png); /* fallback */
-  background-image: url(./Assets/bg.png),
-    linear-gradient(0deg, rgba(19, 19, 19, 0.29), rgba(19, 19, 19, 0.29)),
-    linear-gradient(112.68deg, #180247 0%, #010004 100%);
-  display: flex;
-  flex-direction: column;
+	height: 100%;
+	margin: 0;
+	background: #000;
+	background-image: url(./Assets/bg1.png); /* fallback */
+	background-image: url(./Assets/bg1.png),
+		linear-gradient(0deg, rgba(19, 19, 19, 0.29), rgba(19, 19, 19, 0.29)),
+		linear-gradient(112.68deg, #180247 0%, #010004 100%);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
 }
 
 .logo {
-  padding-top: 10rem;
-  text-align: center;
-  padding-bottom: 3rem;
+	padding-top: 5rem;
+	text-align: center;
+	padding-bottom: 3rem;
 }
 
 .congratulations {
-  position: static;
-  width: auto;
-  height: 86px;
-  font-size: 86px;
-  font-family: Gilroy;
-  font-weight: bolder;
-  color: white;
-  text-align: center;
-  letter-spacing: 0.75px;
+	position: static;
+	width: auto;
+	height: 86px;
+	font-size: 86px;
+	font-family: GilroySemiBold;
+	font-weight: bolder;
+	color: white;
+	text-align: center;
+	letter-spacing: 0.75px;
 }
 
 .explorer {
-  position: static;
-  width: auto;
-  height: 107px;
-  font-size: 92px;
-  font-family: Gilroy;
-  font-weight: 600;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-    1px 1px 0 #fff;
-  text-align: center;
-  letter-spacing: 0.75px;
+	position: static;
+	width: auto;
+	height: 107px;
+	font-size: 92px;
+	font-family: GilroySemiBold;
+	font-weight: 600;
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+		1px 1px 0 #fff;
+	text-align: center;
+	letter-spacing: 0.75px;
 }
 
 .rewards {
-  margin-top: 5rem;
-  position: static;
-  text-align: center;
-  font-family: Gilroy;
-  color: white;
-  font-size: 32px;
-  letter-spacing: 1.37px;
+	margin-top: 5rem;
+	position: static;
+	text-align: center;
+	font-family: GilroyMedium;
+	color: white;
+	font-size: 32px;
+	letter-spacing: 1.37px;
 }
 
 .timer {
-  position: static;
-  text-align: center;
-  font-family: Gilroy;
-  font-weight: bold;
-  color: white;
-  font-size: 36px;
-  letter-spacing: 4px;
+	position: static;
+	text-align: center;
+	font-family: GilroySemiBold;
+	font-weight: bold;
+	color: white;
+	font-size: 36px;
+	letter-spacing: 4px;
 }
 
 .tuned {
-  margin-top: 5rem;
-  position: static;
-  text-align: center;
-  font-family: Gilroy;
-  color: white;
-  font-size: 32px;
-  letter-spacing: 1.37px;
+	margin-top: 5rem;
+	position: static;
+	text-align: center;
+	font-family: GilroyMedium;
+	color: white;
+	font-size: 32px;
+	letter-spacing: 1.37px;
 }
 
 .check {
-  position: static;
-  text-align: center;
-  font-family: Gilroy;
-  color: white;
-  font-size: 32px;
-  letter-spacing: 0.75px;
+	position: static;
+	text-align: center;
+	font-family: GilroyMedium;
+	color: white;
+	font-size: 32px;
+	letter-spacing: 0.75px;
 }
 
 footer {
-  position: relative;
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 21px;
-  margin-top: auto;
-  color: white;
+	position: relative;
+	text-align: center;
+	margin-bottom: 2rem;
+	padding-bottom: 5%;
+	font-size: 21px;
+	margin-top: 7%;
+	color: white;
+	font-family: GilroyMedium;
 }
 
 @media screen and (max-width: 750px) {
-  .logo {
-    padding-top: 7rem;
-  }
-  .congratulations {
-    font-size: 45px;
-  }
+	body {
+		padding: 3%;
+	}
+	.logo {
+		padding-top: 7rem;
+	}
+	.congratulations {
+		font-size: 45px;
+	}
 
-  .explorer {
-    font-size: 54px;
-  }
+	.explorer {
+		font-size: 54px;
+	}
 
-  .timer {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 25px;
-  }
-  .rewards,
-  .tuned,
-  .check {
-    font-size: 25px;
-  }
+	.timer {
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 25px;
+	}
+	.rewards,
+	.tuned,
+	.check {
+		font-size: 25px;
+	}
 
-  footer {
-    margin-top: 30px;
-    font-size: 13.5px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+	footer {
+		margin-top: 30px;
+		font-size: 13.5px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 }
