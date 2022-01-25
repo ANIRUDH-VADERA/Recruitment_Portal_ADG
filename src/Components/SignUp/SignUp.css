@@ -30,8 +30,8 @@
 }
 
 .signup_page .main_form {
-  width: 30vw;
-  height: 77%;
+  width: 25vw;
+  height: 68%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,39 +42,34 @@
 }
 
 .signup_page .btn1 {
+  font-size: 18px;
   margin: 0 !important;
+  width: 100% !important;
 }
 
 .signup_page .heading {
   font-family: GilroySemiBold;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 29px;
   /* identical to box height */
 
   text-align: center;
-
   color: #ffffff;
   margin: 0;
-  margin-top: 30px;
 }
 
 .signup_page .para {
   font-family: GilroyMedium;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
-  /* identical to box height, or 137% */
-
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.25px;
-
-  /* Text/Secondary */
-
   color: rgba(255, 255, 255, 0.7);
   margin: 5px;
 }
@@ -83,18 +78,19 @@
   font-family: GilroySemiBold;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 28px;
-  /* or 175% */
-
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.75px;
-
-  /* Text/Secondary */
-
   color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  margin-top: 10px;
+}
+
+.signup_page input {
+  width: 95% !important;
 }
 
 .signup_page .tologin {
@@ -105,8 +101,8 @@
 
 .signup_page .form {
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 25px;
+  margin-top: 5px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -147,25 +143,27 @@
 }
 
 .otp_page .main_form {
-  width: 30vw;
-  height: 40%;
+  width: 26vw;
+  height: 38%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 45px 40px 45px 40px;
+  padding: 40px 35px 40px 35px;
   background: #1f1f1f;
   border-radius: 25px;
 }
 
 .otp_page .btn1 {
   margin: 0 !important;
+  font-size: 18px;
+  width: 100% !important;
 }
 .otp_page .heading {
   font-family: GilroySemiBold;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 29px;
   /* identical to box height */
 
@@ -179,7 +177,7 @@
   font-family: GilroyMedium;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   /* identical to box height, or 137% */
 
@@ -198,24 +196,23 @@
   font-family: GilroyMedium;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 13.5px;
   line-height: 22px;
   /* identical to box height, or 157% */
-
   display: flex;
   align-items: center;
   letter-spacing: 0.25px;
-
   /* Text/disabled */
-
   color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .otp_page .tosignup {
   font-family: GilroyMedium;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 28px;
   /* or 175% */
 
@@ -225,6 +222,7 @@
   letter-spacing: 0.75px;
   color: #864ff9;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .otp_page .resendOTP {
@@ -235,10 +233,27 @@
 
 .otp_page .form {
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 12px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.otp_page .otp_para {
+  font-family: GilroyMedium;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height, or 147% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 10px;
 }

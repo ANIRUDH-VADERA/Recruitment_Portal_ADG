@@ -12,7 +12,7 @@ function Input(props) {
 
   return (
     <>
-      <label htmlFor={props.heading}>{props.heading}</label>
+      <label htmlFor={props.heading}>{props.heading}<span className="optional">{props.optional}</span></label>
       <div className="enclosing_div">
         <input
           onFocus={() => {
@@ -35,7 +35,7 @@ function Input(props) {
           <img
             className="cross"
             alt="cross"
-            onClick={handleClick}
+            onClick={()=>{handleClick()}}
             src={cross}
           />
         )}

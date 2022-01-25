@@ -9,7 +9,7 @@ function Otp() {
         value={otp}
         onChange={setOtp}
         numInputs={6}
-        separator={<span>-</span>}
+        separator={<span className="tobeblack">-</span>}
                 className='otp-input'
                 containerStyle={{
                     width: '100%',
@@ -18,7 +18,7 @@ function Otp() {
                     width: "",
                     padding: "0.3rem",
                 }}
-                
+     
       />
         </div>
     );
