@@ -4,6 +4,7 @@ import "./AboutYou.css";
 import backImg from "../images/back_img.svg";
 import Navbar from "../Navbar/Navbar";
 import Button from "../Inputs/Button";
+import TextArea from "../Inputs/TextArea";
 
 function SignUp() {
   const navigate = useNavigate();
@@ -26,6 +27,7 @@ function SignUp() {
                     <input type="text" id="name" name="name" placeholder="Enter the name" />
                     <label for="fname">Portfolio Link <span className="optional">(Optional)</span></label>
                     <input type="text" id="name" name="name" placeholder="Enter the name" /> */}
+              <TextArea />
             </form>
             <Button
               class="btn1"
