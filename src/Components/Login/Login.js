@@ -1,7 +1,8 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from "react";
 import "./Login.css";
-import backImg from "../images/back_img.svg";
 import { useNavigate } from "react-router-dom";
+import backImg from "../images/back_img.svg";
 import Navbar from "../Navbar/Navbar";
 import Button from "../Inputs/Button";
 

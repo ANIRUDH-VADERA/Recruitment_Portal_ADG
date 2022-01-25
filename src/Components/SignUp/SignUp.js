@@ -1,8 +1,10 @@
-import React from "react";
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+import React, { useState } from "react";
 import "./SignUp.css";
-import back_img from "../images/back_img.svg";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import back_img from "../images/back_img.svg";
+
 import Navbar from "../Navbar/Navbar";
 import Button from "../Inputs/Button";
 import Input from "../Inputs/Input";
@@ -48,7 +50,7 @@ function SignUp() {
                 Check your VIT Mail Inbox or Spam Folder for the OTP
               </p>
               <form className="form">
-                <label for="fname">OTP</label>
+                <label htmlFor="fname">OTP</label>
                 <input
                   type="text"
                   id="name"
