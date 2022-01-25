@@ -8,7 +8,7 @@ import back_img from "../images/back_img.svg";
 import Navbar from "../Navbar/Navbar";
 import Button from "../Inputs/Button";
 import Input from "../Inputs/Input";
-
+import Otp from "../Otp/Otp";
 function SignUp() {
   const navigate = useNavigate();
   const [isOtp, setIsOtp] = useState(0);
@@ -50,13 +50,14 @@ function SignUp() {
                 Check your VIT Mail Inbox or Spam Folder for the OTP
               </p>
               <form className="form">
-                <label htmlFor="fname">OTP</label>
+                {/* <label htmlFor="fname">OTP</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Enter the name"
-                />
+                /> */}
+                <Otp />
                 <p className="bottom">
                   Didn’t recieve OTP?{" "}
                   <span className="resendOTP" onClick={() => {}}>
