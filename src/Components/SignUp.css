@@ -57,23 +57,7 @@
 }
 
 .signup_page .btn1 {
-  -webkit-border-radius: 12;
-  -moz-border-radius: 12;
-  border-radius: 12px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  background: #6b27f8;
-  padding: 3%;
-  text-decoration: none;
-  border: none;
-  width: 100%;
-  margin: 0;
-}
-
-.signup_page .btn1:hover {
-  background: #4506c8;
-  text-decoration: none;
+  margin: 0 !important;
 }
 
 .signup_page .heading {
@@ -217,25 +201,8 @@
 }
 
 .otp_page .btn1 {
-  -webkit-border-radius: 12;
-  -moz-border-radius: 12;
-  border-radius: 12px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  background: #6b27f8;
-  padding: 3%;
-  text-decoration: none;
-  border: none;
-  width: 100%;
-  margin: 0;
+  margin: 0 !important;
 }
-
-.otp_page.btn1:hover {
-  background: #4506c8;
-  text-decoration: none;
-}
-
 .otp_page .heading {
   font-family: GilroySemiBold;
   font-style: normal;
@@ -316,20 +283,4 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-.otp_page label {
-  font-family: GilroyMedium;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 22px;
-  /* identical to box height, or 147% */
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.25px;
-
-  color: #ffffff;
-  margin-bottom: 5px;
 }

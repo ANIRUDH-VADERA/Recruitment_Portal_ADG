@@ -57,23 +57,7 @@
 }
 
 .about_page .btn1 {
-  -webkit-border-radius: 12;
-  -moz-border-radius: 12;
-  border-radius: 12px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  background: #6b27f8;
-  padding: 3%;
-  text-decoration: none;
-  border: none;
-  width: 100%;
-  margin: 0;
-}
-
-.about_page .btn1:hover {
-  background: #4506c8;
-  text-decoration: none;
+  margin: 0 !important;
 }
 
 .about_page .heading {

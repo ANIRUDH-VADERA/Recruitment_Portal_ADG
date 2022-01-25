@@ -1,4 +1,3 @@
-import React,{useState} from 'react';
 import "./Domain.css"
 import Radio from '@mui/material/Radio';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';

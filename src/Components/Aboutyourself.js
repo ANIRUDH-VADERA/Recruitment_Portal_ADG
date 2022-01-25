@@ -3,6 +3,7 @@ import "./Aboutyourself.css"
 import back_img from "../images/back_img.svg"
 import {useNavigate} from "react-router-dom";
 import Navbar from "./Navbar.js"
+import Button from "./Button.js";
 
 function SignUp() {
     const navigate = useNavigate();
@@ -26,7 +27,7 @@ function SignUp() {
                     <label for="fname">Portfolio Link <span className="optional">(Optional)</span></label>
                     <input type="text" id="name" name="name" placeholder="Enter the name" />
                 </form>
-                <button className="btn1" onClick={()=>{navigate("/domain")}} >Get Started</button>
+                <Button class="btn1" ClickFunction = {()=>{navigate("/domain")}} heading = "Get Started" />
             </div>
         </div>
     </div>

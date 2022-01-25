@@ -4,11 +4,31 @@ import back_img from "../images/back_img.svg"
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import Navbar from "./Navbar.js"
+import Button from "./Button.js";
+import Input from "./Input.js";
 
 function SignUp() {
     const navigate = useNavigate();
     const [isOtp ,setIsOtp] = useState(0);
-    
+
+    const [name,setName] = useState("");
+    const [reg_no,setReg_no] = useState("");
+    const [email,setEmail] = useState("");
+    const [ph,setPh] = useState("");
+
+    const handleChange1 = (e) => {
+        setName(e.target.value);
+    }
+    const handleChange2 = (e) => {
+        setReg_no(e.target.value);
+    }
+    const handleChange3 = (e) => {
+        setEmail(e.target.value);
+    }
+    const handleChange4 = (e) => {
+        setPh(e.target.value);
+    }
+
     const handleClick = ()=>{
         setIsOtp(1);
     }
@@ -30,7 +50,7 @@ function SignUp() {
                     <input type="text" id="name" name="name" placeholder="Enter the name" />
                     <p className="bottom">Didn’t recieve OTP?  <span className="resendOTP" onClick={()=>{}}> Resend OTP </span></p>
                 </form>
-                <button className="btn1" onClick={()=>{navigate("/aboutyou")}} >Verify OTP</button>
+                <Button class="btn1" ClickFunction = {()=>{navigate("/aboutyou")}} heading = "Verify OTP" />
                 <p className="tosignup"  onClick={()=>{setIsOtp(0)}}>Go Back</p>
             </div>
         </div>
@@ -45,16 +65,12 @@ function SignUp() {
                 <h1 className="heading">Create an Account</h1>
                 <p className='para'>Personal information / Contact Details</p>
                 <form className="form">
-                    <label for="fname">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter the name" />
-                    <label for="lname">Registration Number</label>
-                    <input type="text" id="reg" name="reg_no" placeholder="Enter the Reg Number" />
-                    <label for="lname">VIT Email ID</label>
-                    <input type="text" id="email" name="email" placeholder="Enter the VIT Email ID" />
-                    <label for="lname">Phone Number</label>
-                    <input type="text" id="number" name="number" placeholder="Enter the Ph Number with Country Code" />
+                    <Input val={name} change={handleChange1} heading="Name" placeholder= "Enter the name" />
+                    <Input val={reg_no} change={handleChange2} heading="Registration Number" placeholder= "Enter the Reg Number" />
+                    <Input val={email} change={handleChange3} heading="VIT Email ID" placeholder= "Enter the VIT Email ID" />
+                    <Input val={ph} change={handleChange4} heading="Phone Number" placeholder= "Enter the Ph Number with Country Code" />
                 </form>
-                <button className="btn1" onClick={()=>{handleClick()}} >Create an Account</button>
+                <Button class="btn1" ClickFunction = {handleClick} heading = "Create an Account" />
                 <p className="bottom">Already Have an Account?  <span className="tologin" onClick={()=>{navigate("/Login")}}>  Login</span></p>
             </div>
         </div>
