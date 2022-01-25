@@ -1,0 +1,79 @@
+.domain_page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.domain_page .main_form {
+  margin-top: 70px;
+  width: 30vw;
+  height: 52%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 30px 45px 30px;
+  background: #1f1f1f;
+  border-radius: 25px;
+}
+
+.domain_page .btn1 {
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #6b27f8;
+  padding: 3%;
+  text-decoration: none;
+  border: none;
+  width: 100%;
+  margin: 0;
+}
+
+.domain_page .btn1:hover {
+  background: #4506c8;
+  text-decoration: none;
+}
+
+.domain_page .heading {
+  font-family: GilroySemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26.7857px;
+  line-height: 32px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+  margin: 0;
+}
+
+.domain_page .para {
+  font-family: GilroyMedium;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.8571px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Text/Secondary */
+
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.domain_page .domains {
+  margin: 30px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

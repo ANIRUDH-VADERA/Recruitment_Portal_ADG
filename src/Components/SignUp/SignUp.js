@@ -1,22 +1,41 @@
-/* eslint-disable camelcase */
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable react/button-has-type */
-import React, { useState } from "react";
+import React from "react";
 import "./SignUp.css";
-import { useNavigate } from "react-router-dom";
 import back_img from "../images/back_img.svg";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
+import Button from "../Inputs/Button";
+import Input from "../Inputs/Input";
 
 function SignUp() {
   const navigate = useNavigate();
   const [isOtp, setIsOtp] = useState(0);
+
+  const [name, setName] = useState("");
+  const [reg_no, setReg_no] = useState("");
+  const [email, setEmail] = useState("");
+  const [ph, setPh] = useState("");
+
+  const handleChange1 = (e) => {
+    setName(e.target.value);
+  };
+  const handleChange2 = (e) => {
+    setReg_no(e.target.value);
+  };
+  const handleChange3 = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleChange4 = (e) => {
+    setPh(e.target.value);
+  };
 
   const handleClick = () => {
     setIsOtp(1);
   };
 
   return (
-    <div>
+    <>
+      <Navbar navbar={0} />
       {isOtp ? (
         <div className="otp_page">
           <div className="left">
@@ -29,7 +48,7 @@ function SignUp() {
                 Check your VIT Mail Inbox or Spam Folder for the OTP
               </p>
               <form className="form">
-                <label htmlFor="fname">OTP</label>
+                <label for="fname">OTP</label>
                 <input
                   type="text"
                   id="name"
@@ -44,14 +63,13 @@ function SignUp() {
                   </span>
                 </p>
               </form>
-              <button
-                className="btn1"
-                onClick={() => {
+              <Button
+                class="btn1"
+                ClickFunction={() => {
                   navigate("/aboutyou");
                 }}
-              >
-                Verify OTP
-              </button>
+                heading="Verify OTP"
+              />
               <p
                 className="tosignup"
                 onClick={() => {
@@ -73,43 +91,40 @@ function SignUp() {
               <h1 className="heading">Create an Account</h1>
               <p className="para">Personal information / Contact Details</p>
               <form className="form">
-                <label htmlFor="fname">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
+                <Input
+                  setnull={setName}
+                  val={name}
+                  change={handleChange1}
+                  heading="Name"
                   placeholder="Enter the name"
                 />
-                <label htmlFor="lname">Registration Number</label>
-                <input
-                  type="text"
-                  id="reg"
-                  name="reg_no"
+                <Input
+                  setnull={setReg_no}
+                  val={reg_no}
+                  change={handleChange2}
+                  heading="Registration Number"
                   placeholder="Enter the Reg Number"
                 />
-                <label htmlFor="lname">VIT Email ID</label>
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
+                <Input
+                  setnull={setEmail}
+                  val={email}
+                  change={handleChange3}
+                  heading="VIT Email ID"
                   placeholder="Enter the VIT Email ID"
                 />
-                <label htmlFor="lname">Phone Number</label>
-                <input
-                  type="text"
-                  id="number"
-                  name="number"
+                <Input
+                  setnull={setPh}
+                  val={ph}
+                  change={handleChange4}
+                  heading="Phone Number"
                   placeholder="Enter the Ph Number with Country Code"
                 />
               </form>
-              <button
-                className="btn1"
-                onClick={() => {
-                  handleClick();
-                }}
-              >
-                Create an Account
-              </button>
+              <Button
+                class="btn1"
+                ClickFunction={handleClick}
+                heading="Create an Account"
+              />
               <p className="bottom">
                 Already Have an Account?{" "}
                 <span
@@ -126,7 +141,7 @@ function SignUp() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
