@@ -1,17 +1,3 @@
-@font-face {
-  font-family: Gilroy;
-  src: url("../font/Gilroy Font/Gilroy-Bold.ttf");
-}
-
-@font-face {
-  font-family: GilroySemiBold;
-  src: url("../font/Gilroy Font/Gilroy-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: GilroyMedium;
-  src: url("../font/Gilroy Font/Gilroy-Medium.ttf");
-}
 
 .about_page {
   height: 100vh;
