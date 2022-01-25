@@ -4,6 +4,7 @@ import "./AboutYou.css";
 import backImg from "../images/back_img.svg";
 import Navbar from "../Navbar/Navbar";
 import Button from "../Inputs/Button";
+import TextArea from "../Inputs/TextArea";
 import Input from "../Inputs/Input";
 
 function SignUp() {
@@ -29,6 +30,7 @@ function SignUp() {
             <h1 className="heading">Tell us about yourself</h1>
             <p className="para">Almost Done! Help Us Know you Better</p>
             <form className="form">
+            <TextArea />
                 <Input
                   setnull={setprofile}
                   val={profile}
