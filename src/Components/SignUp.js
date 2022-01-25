@@ -3,6 +3,7 @@ import "./SignUp.css"
 import back_img from "../images/back_img.svg"
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
+import Navbar from "./Navbar.js"
 
 function SignUp() {
     const navigate = useNavigate();
@@ -14,6 +15,7 @@ function SignUp() {
     
     return (
     <>
+    <Navbar navbar = {0} />
     {isOtp ? 
     <div className='otp_page'>
         <div className="left">

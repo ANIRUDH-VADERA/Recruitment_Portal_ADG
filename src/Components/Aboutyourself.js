@@ -1,13 +1,15 @@
 import React from 'react';
 import "./Aboutyourself.css"
 import back_img from "../images/back_img.svg"
-import {useState} from "react";
 import {useNavigate} from "react-router-dom";
+import Navbar from "./Navbar.js"
 
 function SignUp() {
     const navigate = useNavigate();
 
     return (
+    <>
+    <Navbar navbar = {0} />
     <div className='about_page'>
         <div className="left">
             <img alt="background" src={back_img}/>
@@ -24,10 +26,11 @@ function SignUp() {
                     <label for="fname">Portfolio Link <span className="optional">(Optional)</span></label>
                     <input type="text" id="name" name="name" placeholder="Enter the name" />
                 </form>
-                <button className="btn1" onClick={()=>{navigate("/aboutyou")}} >Get Started</button>
+                <button className="btn1" onClick={()=>{navigate("/domain")}} >Get Started</button>
             </div>
         </div>
     </div>
+    </>
   );
 }
 

@@ -3,11 +3,14 @@ import "./LandingPage.css"
 import Portal from "../images/Portal.svg"
 import back_img from "../images/back_img.svg"
 import {useNavigate} from "react-router-dom";
+import Navbar from "./Navbar.js"
 
 function LandingPage() {
     const navigate = useNavigate();
     
     return (
+        <>
+        <Navbar navbar = {0} />
         <div className='landing_page'>
             <div className="left">
                 <div className="info">
@@ -23,6 +26,7 @@ function LandingPage() {
                 <img alt="background" src={back_img}/>
             </div>
         </div>
+        </>
     )
 }
 
