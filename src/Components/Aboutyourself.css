@@ -127,33 +127,6 @@
   align-items: flex-start;
 }
 
-input {
-  width: 100%;
-  background: #2b2b2b;
-  border-radius: 16px;
-  width: 450px;
-  height: 48px;
-  margin: 5px;
-  padding-left: 20px;
-  border: none;
-}
-
-label {
-  font-family: GilroyMedium;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 22px;
-  /* identical to box height, or 147% */
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.25px;
-
-  color: #ffffff;
-  margin-bottom: 5px;
-}
-
 .about_page .optional {
   margin-left: 3px;
   font-family: GilroyMedium;

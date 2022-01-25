@@ -26,8 +26,8 @@ function Login() {
               <h1 className="heading">One Time Password</h1>
               <p className='para'>Check your VIT Mail Inbox or Spam Folder for the OTP</p>
               <form className="form">
-                  <label for="fname">OTP</label>
-                  <input type="text" id="name" name="name" placeholder="Enter the name" />
+                  {/* <label for="fname">OTP</label>
+                  <input type="text" id="name" name="name" placeholder="Enter the name" /> */}
                   <p className="bottom">Didn’t recieve OTP?  <span className="resendOTP" onClick={()=>{}}> Resend OTP </span></p>
               </form>
               <Button class="btn1" ClickFunction = {()=>{navigate("/aboutyou")}} heading = "Verify OTP" />
@@ -45,8 +45,8 @@ function Login() {
               <h1 className="heading">Login</h1>
               <p className='para'>Login with your VIT Registration Number</p>
               <form className="form">
-                  <label for="fname">Registration Number</label>
-                  <input type="text" id="name" name="name" placeholder="Enter your Registration Number. Eg: 20BCE0001" />
+                  {/* <label for="fname">Registration Number</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your Registration Number. Eg: 20BCE0001" /> */}
               </form>
               <Button class="btn1" ClickFunction = {()=>{handleClick()}} heading = "Login with OTP" />
               <p className="bottom">Don’t have an account? <span className="tosignup" onClick={()=>{navigate("/SignUp")}}>  Create One</span></p>

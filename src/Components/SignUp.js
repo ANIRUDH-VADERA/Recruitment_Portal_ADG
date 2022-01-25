@@ -65,10 +65,10 @@ function SignUp() {
                 <h1 className="heading">Create an Account</h1>
                 <p className='para'>Personal information / Contact Details</p>
                 <form className="form">
-                    <Input val={name} change={handleChange1} heading="Name" placeholder= "Enter the name" />
-                    <Input val={reg_no} change={handleChange2} heading="Registration Number" placeholder= "Enter the Reg Number" />
-                    <Input val={email} change={handleChange3} heading="VIT Email ID" placeholder= "Enter the VIT Email ID" />
-                    <Input val={ph} change={handleChange4} heading="Phone Number" placeholder= "Enter the Ph Number with Country Code" />
+                    <Input setnull = {setName} val={name} change={handleChange1} heading="Name" placeholder= "Enter the name" />
+                    <Input setnull = {setReg_no} val={reg_no} change={handleChange2} heading="Registration Number" placeholder= "Enter the Reg Number" />
+                    <Input setnull = {setEmail} val={email} change={handleChange3} heading="VIT Email ID" placeholder= "Enter the VIT Email ID" />
+                    <Input setnull = {setPh} val={ph} change={handleChange4} heading="Phone Number" placeholder= "Enter the Ph Number with Country Code" />
                 </form>
                 <Button class="btn1" ClickFunction = {handleClick} heading = "Create an Account" />
                 <p className="bottom">Already Have an Account?  <span className="tologin" onClick={()=>{navigate("/Login")}}>  Login</span></p>
