@@ -30,26 +30,28 @@
 }
 
 .about_page .main_form {
-  width: 30vw;
+  width: 25vw;
   height: 55%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 45px 40px 45px 40px;
+  padding: 40px 35px 40px 35px;
   background: #1f1f1f;
   border-radius: 25px;
 }
 
 .about_page .btn1 {
   margin: 0 !important;
+  font-size: 18px;
+  width: 100% !important;
 }
 
 .about_page .heading {
   font-family: GilroySemiBold;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 29px;
   /* identical to box height */
 
@@ -63,7 +65,7 @@
   font-family: GilroyMedium;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   /* identical to box height, or 137% */
 
@@ -78,34 +80,10 @@
   margin: 5px;
 }
 
-.about_page .bottom {
-  font-family: GilroyMedium;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 28px;
-  /* or 175% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.75px;
-
-  /* Text/Secondary */
-
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.about_page .tologin {
-  margin-left: 3px;
-  color: #864ff9;
-  cursor: pointer;
-}
-
 .about_page .form {
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -117,7 +95,7 @@
   font-family: GilroyMedium;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   /* identical to box height, or 137% */
 

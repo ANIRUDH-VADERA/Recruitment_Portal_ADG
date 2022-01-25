@@ -4,11 +4,12 @@ import React, { useState } from "react";
 import "./SignUp.css";
 import { useNavigate } from "react-router-dom";
 import back_img from "../images/back_img.svg";
-
 import Navbar from "../Navbar/Navbar";
 import Button from "../Inputs/Button";
 import Input from "../Inputs/Input";
-import Otp from "../Otp/Otp";
+import Otp from "../Otp/Otp.js";
+
+
 function SignUp() {
   const navigate = useNavigate();
   const [isOtp, setIsOtp] = useState(0);
@@ -50,13 +51,7 @@ function SignUp() {
                 Check your VIT Mail Inbox or Spam Folder for the OTP
               </p>
               <form className="form">
-                {/* <label htmlFor="fname">OTP</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Enter the name"
-                /> */}
+                <p className = "otp_para">OTP</p>
                 <Otp />
                 <p className="bottom">
                   Didn’t recieve OTP?{" "}
@@ -100,12 +95,14 @@ function SignUp() {
                   change={handleChange1}
                   heading="Name"
                   placeholder="Enter the name"
+                  optional =""
                 />
                 <Input
                   setnull={setReg_no}
                   val={reg_no}
                   change={handleChange2}
                   heading="Registration Number"
+                  optional =""
                   placeholder="Enter the Reg Number"
                 />
                 <Input
@@ -114,9 +111,11 @@ function SignUp() {
                   change={handleChange3}
                   heading="VIT Email ID"
                   placeholder="Enter the VIT Email ID"
+                  optional =""
                 />
                 <Input
                   setnull={setPh}
+                  optional =""
                   val={ph}
                   change={handleChange4}
                   heading="Phone Number"

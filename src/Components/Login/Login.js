@@ -5,13 +5,21 @@ import { useNavigate } from "react-router-dom";
 import backImg from "../images/back_img.svg";
 import Navbar from "../Navbar/Navbar";
 import Button from "../Inputs/Button";
+import Input from "../Inputs/Input";
+import Otp from "../Otp/Otp.js";
 
 function Login() {
   const [isOtp, setIsOtp] = useState(0);
+  const [reg_no, setReg_no] = useState("");
+
+  const handleChange1 = (e) => {
+    setReg_no(e.target.value);
+  };
 
   function handleClick() {
     setIsOtp(1);
   }
+
 
   const navigate = useNavigate();
 
@@ -27,8 +35,8 @@ function Login() {
                 Check your VIT Mail Inbox or Spam Folder for the OTP
               </p>
               <form className="form">
-                {/* <label for="fname">OTP</label>
-                  <input type="text" id="name" name="name" placeholder="Enter the name" /> */}
+              <p className = "otp_para">OTP</p>
+                <Otp />
                 <p className="bottom">
                   Didn’t recieve OTP?{" "}
                   <span className="resendOTP" onClick={() => {}}>
@@ -65,8 +73,14 @@ function Login() {
               <h1 className="heading">Login</h1>
               <p className="para">Login with your VIT Registration Number</p>
               <form className="form">
-                {/* <label for="fname">Registration Number</label>
-                  <input type="text" id="name" name="name" placeholder="Enter your Registration Number. Eg: 20BCE0001" /> */}
+                  <Input
+                    setnull={setReg_no}
+                    val={reg_no}
+                    change={handleChange1}
+                    heading="Registration Number"
+                    placeholder="Enter your Registration Number. Eg: 20BCE0001"
+                    optional =""
+                />
               </form>
               <Button
                 class="btn1"

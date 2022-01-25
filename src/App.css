@@ -33,3 +33,8 @@ body {
   font-family: Gilroy;
   src: url("./font/Gilroy-Regular.ttf");
 }
+
+@font-face {
+  font-family: GilroyExtraBold;
+  src: url("./font/Gilroy-ExtraBold.ttf");
+}
