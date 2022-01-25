@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from "react";
 import "./Input.css";
 import cross from "../images/cross.svg";
@@ -11,7 +12,7 @@ function Input(props) {
 
   return (
     <>
-      <label for={props.heading}>{props.heading}</label>
+      <label htmlFor={props.heading}>{props.heading}</label>
       <div className="enclosing_div">
         <input
           onFocus={() => {
