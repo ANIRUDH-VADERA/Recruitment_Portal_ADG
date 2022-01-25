@@ -1,9 +1,9 @@
 import React from 'react';
 import './TextArea.css';
-function TextArea() {
+function TextArea(props) {
     return (
         <>
-         <textarea className="textarea input" placeholder="Enter your text here..."></textarea>
+        <textarea className="textarea input" placeholder="Enter your text here..." onChange={(e) => { props.change(e) }}></textarea>
         </>
   )
 }

@@ -11,12 +11,16 @@ function SignUp() {
   const navigate = useNavigate();
   const [profile, setprofile] = useState("");
   const [portfolio_link, setportfolio_link] = useState("");
+  const [bio, setbio] = useState("");
 
   const handleChange1 = (e) => {
     setprofile(e.target.value);
   };
   const handleChange2 = (e) => {
     setportfolio_link(e.target.value);
+  };
+  const handleChangebio = (e) => {
+    setbio(e.target.value);
   };
   return (
     <>
@@ -30,7 +34,7 @@ function SignUp() {
             <h1 className="heading">Tell us about yourself</h1>
             <p className="para">Almost Done! Help Us Know you Better</p>
             <form className="form">
-            <TextArea />
+            <TextArea val={bio} change={handleChangebio} />
                 <Input
                   setnull={setprofile}
                   val={profile}
