@@ -36,13 +36,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 45px 40px 45px 40px;
+  padding: 55px 40px 55px 40px;
   background: #1f1f1f;
   border-radius: 25px;
 }
 
 .signup_page .btn1 {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0 !important;
   width: 100% !important;
 }
@@ -149,14 +149,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 35px 40px 35px;
+  padding: 50px 35px 50px 35px;
   background: #1f1f1f;
   border-radius: 25px;
 }
 
 .otp_page .btn1 {
   margin: 0 !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 100% !important;
 }
 .otp_page .heading {
@@ -256,4 +256,263 @@
   color: #ffffff;
   margin: 0;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 620px) {
+  .signup_page .left {
+    display: none;
+  }
+  .signup_page .right {
+    margin-top: 30px !important;
+    width: 90vw;
+  }
+  .signup_page .main_form {
+    width: 55vw;
+    height: 53%;
+    padding: 35px 20px 35px 20px;
+  }
+
+  .signup_page .btn1 {
+    font-size: 13px !important;
+  }
+
+  .signup_page .heading {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .signup_page .para {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .signup_page .bottom {
+    font-size: 10px;
+    line-height: 25px;
+    letter-spacing: 0.55px;
+    margin-top: 6px;
+  }
+
+  .signup_page .form {
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
+
+  /* OTP PAGE */
+
+  .otp_page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .otp_page .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 55vw;
+  }
+
+  .otp_page .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 45vw;
+  }
+
+  .otp_page .left img {
+    height: 100vh;
+    width: 55vw;
+    object-fit: cover;
+  }
+
+  .otp_page .main_form {
+    width: 26vw;
+    height: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 35px 50px 35px;
+    background: #1f1f1f;
+    border-radius: 25px;
+  }
+
+  .otp_page .btn1 {
+    margin: 0 !important;
+    font-size: 16px;
+    width: 100% !important;
+  }
+  .otp_page .heading {
+    font-family: GilroySemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .otp_page .para {
+    font-family: GilroyMedium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25px;
+
+    /* Text/Secondary */
+
+    color: rgba(255, 255, 255, 0.7);
+    margin: 5px;
+  }
+
+  .otp_page .bottom {
+    font-family: GilroyMedium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.5px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    /* Text/disabled */
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .otp_page .tosignup {
+    font-family: GilroyMedium;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    /* or 175% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.75px;
+    color: #864ff9;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .otp_page .resendOTP {
+    margin-left: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+  }
+
+  .otp_page .form {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .otp_page .otp_para {
+    font-family: GilroyMedium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height, or 147% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 950px) and (min-width: 600px) {
+  .signup_page .left {
+    display: none;
+  }
+  .signup_page .right {
+    margin-top: 20px !important;
+    width: 90vw;
+  }
+  .signup_page .main_form {
+    width: 55vw;
+    height: 46%;
+    padding: 30px 30px 30px 30px;
+  }
+
+  .signup_page .btn1 {
+    font-size: 14px !important;
+  }
+
+  .signup_page .heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .signup_page .para {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .signup_page .bottom {
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.55px;
+    margin-top: 6px;
+  }
+
+  .signup_page .form {
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .signup_page .btn1 {
+    font-size: 13px !important;
+  }
+
+  .signup_page .heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .signup_page .para {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .signup_page .bottom {
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.55px;
+    margin-top: 6px;
+  }
+
+  .signup_page .form {
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
 }
