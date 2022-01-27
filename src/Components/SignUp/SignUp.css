@@ -300,151 +300,53 @@
 
   /* OTP PAGE */
 
-  .otp_page {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
   .otp_page .left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 55vw;
+    display: none;
   }
 
   .otp_page .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 45vw;
-  }
-
-  .otp_page .left img {
-    height: 100vh;
-    width: 55vw;
-    object-fit: cover;
+    margin-top: 30px !important;
+    width: 90vw !important;
   }
 
   .otp_page .main_form {
-    width: 26vw;
-    height: 38%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 35px 50px 35px;
-    background: #1f1f1f;
-    border-radius: 25px;
+    width: 55vw;
+    height: 34%;
+    padding: 30px 20px 35px 20px;
   }
 
   .otp_page .btn1 {
-    margin: 0 !important;
-    font-size: 16px;
-    width: 100% !important;
+    font-size: 13px !important;
   }
   .otp_page .heading {
-    font-family: GilroySemiBold;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 29px;
-    /* identical to box height */
-
-    text-align: center;
-    color: #ffffff;
-    margin: 0;
-    margin-top: 30px;
+    font-size: 16px;
+    line-height: 25px;
   }
 
   .otp_page .para {
-    font-family: GilroyMedium;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
-    /* identical to box height, or 137% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.25px;
-
-    /* Text/Secondary */
-
-    color: rgba(255, 255, 255, 0.7);
-    margin: 5px;
+    font-size: 10px;
+    line-height: 20px;
   }
 
   .otp_page .bottom {
-    font-family: GilroyMedium;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13.5px;
+    font-size: 10px;
     line-height: 22px;
-    /* identical to box height, or 157% */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.25px;
-    /* Text/disabled */
-    color: rgba(255, 255, 255, 0.4);
-    margin: 0;
-    margin-bottom: 10px;
+    margin-top: 6px;
   }
 
   .otp_page .tosignup {
-    font-family: GilroyMedium;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 28px;
-    /* or 175% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.75px;
-    color: #864ff9;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-
-  .otp_page .resendOTP {
-    margin-left: 3px;
-    color: rgba(255, 255, 255, 0.7);
-    cursor: pointer;
+    font-size: 10px;
+    margin-top: 5px;
   }
 
   .otp_page .form {
-    width: 100%;
-    margin-top: 12px;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    margin-top: 3px;
+    margin-bottom: 10px;
   }
 
   .otp_page .otp_para {
-    font-family: GilroyMedium;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 22px;
-    /* identical to box height, or 147% */
-
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.25px;
-
-    color: #ffffff;
-    margin: 0;
-    margin-bottom: 10px;
+    font-size: 12px;
+    margin-bottom: 5px;
   }
 }
 
@@ -487,6 +389,56 @@
     margin-top: 5px;
     margin-bottom: 12px;
   }
+  /* OTP PAGE */
+
+  .otp_page .left {
+    display: none;
+  }
+
+  .otp_page .right {
+    margin-top: 20px !important;
+    width: 90vw !important;
+  }
+
+  .otp_page .main_form {
+    width: 55vw;
+    height: 28%;
+    padding: 30px 20px 35px 20px;
+  }
+
+  .otp_page .btn1 {
+    font-size: 14px !important;
+  }
+  .otp_page .heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .otp_page .para {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .otp_page .bottom {
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 8px;
+  }
+
+  .otp_page .tosignup {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .otp_page .form {
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+
+  .otp_page .otp_para {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1000px) {
@@ -514,5 +466,39 @@
   .signup_page .form {
     margin-top: 5px;
     margin-bottom: 12px;
+  }
+  /* OTP PAGE */
+  .otp_page .btn1 {
+    font-size: 13px !important;
+  }
+  .otp_page .heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .otp_page .para {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .otp_page .bottom {
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 8px;
+  }
+
+  .otp_page .tosignup {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .otp_page .form {
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+
+  .otp_page .otp_para {
+    font-size: 12px;
+    margin-bottom: 5px;
   }
 }

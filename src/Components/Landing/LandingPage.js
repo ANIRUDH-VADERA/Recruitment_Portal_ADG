@@ -37,6 +37,7 @@ function LandingPage() {
         </div>
       </div>
       <div className="right">
+        {/* <p className="hi">hi</p> */}
         <img alt="background" src={back_img} />
       </div>
     </div>

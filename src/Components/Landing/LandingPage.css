@@ -38,6 +38,19 @@
   width: 55vw;
 }
 
+/* .hi {
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+} */
+
 .landing_page .info {
   width: 35vw;
   display: flex;
