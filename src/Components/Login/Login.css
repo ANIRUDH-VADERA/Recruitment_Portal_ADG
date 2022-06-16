@@ -1,0 +1,533 @@
+.login_page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.margin{
+  margin-left: 1rem;
+}
+.login_page .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 45vw;
+}
+
+.login_page .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 55vw;
+}
+
+.login_page .right img {
+  height: 100vh;
+  width: 55vw;
+  object-fit: cover;
+}
+
+.login_page .main_form {
+  width: 25vw;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 35px 50px 35px;
+  background: #1f1f1f;
+  border-radius: 25px;
+}
+
+.login_page .btn1 {
+  width: 100% !important;
+  font-size: 16px;
+  margin: 0 !important;
+}
+
+.login_page .heading {
+  font-family: GilroySemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.login_page .para {
+  font-family: GilroyMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 137% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  /* Text/Secondary */
+
+  color: rgba(255, 255, 255, 0.7);
+  margin: 5px;
+}
+
+.login_page .bottom {
+  font-family: GilroySemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 175% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+
+  /* Text/Secondary */
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.login_page .tosignup {
+  margin-left: 3px;
+  color: #864ff9;
+  cursor: pointer;
+}
+
+.login_page .form {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* OTP PAGE */
+
+.otp_page_login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.otp_page_login .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 45vw;
+}
+
+.otp_page_login .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 55vw;
+}
+
+.otp_page_login .right img {
+  height: 100vh;
+  width: 55vw;
+  object-fit: cover;
+}
+
+.otp_page_login .main_form {
+  width: 26vw;
+  height: 38%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 35px 50px 35px;
+  background: #1f1f1f;
+  border-radius: 25px;
+}
+
+.otp_page_login .btn1 {
+  margin: 0 !important;
+  font-size: 16px;
+  width: 100% !important;
+}
+
+.otp_page_login .heading {
+  font-family: GilroySemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.otp_page_login .para {
+  font-family: GilroyMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 137% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  /* Text/Secondary */
+
+  color: rgba(255, 255, 255, 0.7);
+  margin: 5px;
+}
+
+.otp_page_login .bottom {
+  font-family: GilroyMedium;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.5px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+  /* Text/disabled */
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.otp_page_login .tosignup {
+  font-family: GilroyMedium;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 175% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #864ff9;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.otp_page_login .resendOTP {
+  margin-left: 3px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.otp_page_login .form {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.otp_page_login .otp_para {
+  font-family: GilroyMedium;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height, or 147% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 620px) {
+  .login_page .left {
+    margin-top: 20px;
+    width: 90vw !important;
+  }
+
+  .login_page ::placeholder {
+    font-size: 7.5px !important;
+  }
+
+  .login_page .right {
+    display: none;
+  }
+
+  .login_page .main_form {
+    width: 60vw;
+    height: 32%;
+    padding: 35px 20px 35px 20px;
+  }
+
+  .login_page .btn1 {
+    font-size: 12px !important;
+  }
+
+  .login_page .heading {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .login_page .para {
+    font-size: 9px;
+    line-height: 20px;
+  }
+
+  .login_page .bottom {
+    font-size: 10px;
+    line-height: 25px;
+    letter-spacing: 0.55px;
+  }
+  .login_page .form {
+    margin-top: 8px;
+    margin-bottom: 15px;
+  }
+
+  /* OTP PAGE */
+  .otp_page_login .left {
+    margin-top: 20px;
+    width: 90vw !important;
+  }
+
+  .otp_page_login .right {
+    display: none;
+  }
+
+  .otp_page_login .main_form {
+    width: 70vw;
+    height: 34%;
+    padding: 30px 20px 35px 20px;
+  }
+
+  .otp_page_login .btn1 {
+    font-size: 13px !important;
+  }
+
+  .otp_page_login .heading {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .otp_page_login .para {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .otp_page_login .bottom {
+    font-size: 10px;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+
+  .otp_page_login .tosignup {
+    font-size: 10px;
+    line-height: 25px;
+    margin-top: 5px;
+  }
+
+  .otp_page_login .resendOTP {
+    margin-left: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+  }
+
+  .otp_page_login .form {
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
+
+  .otp_page_login .otp_para {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 950px) and (min-width: 600px) {
+  .login_page .left {
+    margin-top: 20px;
+    width: 90vw !important;
+  }
+
+  input {
+    font-size: 12px !important;
+  }
+
+  .login_page .right {
+    display: none;
+  }
+
+  .login_page .main_form {
+    width: 50vw;
+    height: 25%;
+    padding: 30px 30px 30px 30px;
+  }
+
+  .login_page .btn1 {
+    font-size: 14px !important;
+  }
+
+  .login_page .heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .login_page .para {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .login_page .bottom {
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.55px;
+  }
+  .login_page .form {
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+  /* OTP PAGE */
+  .otp_page_login .left {
+    margin-top: 20px;
+    width: 90vw !important;
+  }
+
+  .otp_page_login .right {
+    display: none;
+  }
+
+  .otp_page_login .main_form {
+    width: 55vw;
+    height: 30%;
+    padding: 30px 20px 35px 20px;
+  }
+
+  .otp_page_login .btn1 {
+    font-size: 14px !important;
+  }
+
+  .otp_page_login .heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .otp_page_login .para {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .otp_page_login .bottom {
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 8px;
+  }
+
+  .otp_page_login .tosignup {
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 8px;
+  }
+
+  .otp_page_login .form {
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+
+  .otp_page_login .otp_para {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .login_page .btn1 {
+    font-size: 13px !important;
+  }
+
+  .login_page .heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .login_page .para {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .login_page .bottom {
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.55px;
+  }
+  .login_page .form {
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+  /* OTP PAGE */
+
+  .otp_page_login .btn1 {
+    font-size: 13px !important;
+  }
+
+  .otp_page_login .heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .otp_page_login .para {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .otp_page_login .bottom {
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 8px;
+  }
+
+  .otp_page_login .tosignup {
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 8px;
+  }
+
+  .otp_page_login .form {
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+
+  .otp_page_login .otp_para {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+}

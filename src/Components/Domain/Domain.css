@@ -1,0 +1,55 @@
+.domain_card {
+  width: 100%;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5% 0;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.domain_card:hover {
+  background-color: #2b2b2b;
+}
+
+.domain_card .heading {
+  font-family: GilroySemiBold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.domain_card .para {
+  font-family: GilroyMedium;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.domain_card .image1 {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.domain_card .checkbox {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.domain_card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
